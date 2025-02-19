@@ -1,0 +1,50 @@
+{
+    "model_parameters": {
+        "priors": null,
+        "var_smoothing": 1e-09
+    },
+    "dataset": "risk_level_val_fold9",
+    "accuracy": 0.9509343589259591,
+    "precision": 0.9042761549859248,
+    "recall": 0.9509343589259591,
+    "f1_score": 0.9270185343229619,
+    "classification_report": {
+        "1": {
+            "precision": 0.9509343589259591,
+            "recall": 1.0,
+            "f1-score": 0.9748501835289565,
+            "support": 161210.0
+        },
+        "2": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 7306.0
+        },
+        "3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 458.0
+        },
+        "4": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 554.0
+        },
+        "accuracy": 0.9509343589259591,
+        "macro avg": {
+            "precision": 0.23773358973148978,
+            "recall": 0.25,
+            "f1-score": 0.24371254588223912,
+            "support": 169528.0
+        },
+        "weighted avg": {
+            "precision": 0.9042761549859248,
+            "recall": 0.9509343589259591,
+            "f1-score": 0.9270185343229619,
+            "support": 169528.0
+        }
+    }
+}

@@ -214,3 +214,219 @@
 2025-02-19 16:52:08,987 - shared_logger - INFO - Metrics for risk_level_test saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_test_validation.json
 2025-02-19 16:52:08,988 - shared_logger - INFO - Model saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/DT.joblib
 2025-02-19 16:52:08,988 - shared_logger - INFO - Completed evaluation for model ABCMeta and target risk_level
+2025-02-19 16:58:45,430 - shared_logger - INFO - Data successfully read
+2025-02-19 16:58:45,431 - shared_logger - INFO - Processing target: risk_level
+2025-02-19 16:58:45,431 - shared_logger - INFO - Training and evaluating Random Forest for risk_level...
+2025-02-19 16:58:45,868 - shared_logger - INFO - Initial split: Train+Val (1695288) | Test (423822)
+2025-02-19 16:58:46,042 - shared_logger - INFO - Fold 1:
+2025-02-19 16:58:46,042 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 16:58:46,042 - shared_logger - INFO - Running Fold 1 for model ABCMeta and target risk_level...
+2025-02-19 16:58:46,042 - shared_logger - INFO - training started
+2025-02-19 16:58:46,042 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 16:59:41,530 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold1_metrics.json
+2025-02-19 16:59:41,531 - shared_logger - INFO - validation started
+2025-02-19 16:59:41,894 - shared_logger - INFO - Metrics for risk_level_val_fold1 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold1_validation.json
+2025-02-19 16:59:41,894 - shared_logger - INFO - Completed Fold 1 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 16:59:41,956 - shared_logger - INFO - Fold 2:
+2025-02-19 16:59:41,956 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 16:59:41,956 - shared_logger - INFO - Running Fold 2 for model ABCMeta and target risk_level...
+2025-02-19 16:59:41,956 - shared_logger - INFO - training started
+2025-02-19 16:59:41,956 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 17:00:43,172 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold2_metrics.json
+2025-02-19 17:00:43,173 - shared_logger - INFO - validation started
+2025-02-19 17:00:43,546 - shared_logger - INFO - Metrics for risk_level_val_fold2 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold2_validation.json
+2025-02-19 17:00:43,546 - shared_logger - INFO - Completed Fold 2 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 17:00:43,592 - shared_logger - INFO - Fold 3:
+2025-02-19 17:00:43,592 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:00:43,592 - shared_logger - INFO - Running Fold 3 for model ABCMeta and target risk_level...
+2025-02-19 17:00:43,593 - shared_logger - INFO - training started
+2025-02-19 17:00:43,593 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 17:01:44,697 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold3_metrics.json
+2025-02-19 17:01:44,698 - shared_logger - INFO - validation started
+2025-02-19 17:01:45,074 - shared_logger - INFO - Metrics for risk_level_val_fold3 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold3_validation.json
+2025-02-19 17:01:45,074 - shared_logger - INFO - Completed Fold 3 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 17:01:45,156 - shared_logger - INFO - Fold 4:
+2025-02-19 17:01:45,157 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:01:45,157 - shared_logger - INFO - Running Fold 4 for model ABCMeta and target risk_level...
+2025-02-19 17:01:45,157 - shared_logger - INFO - training started
+2025-02-19 17:01:45,157 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 17:02:47,243 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold4_metrics.json
+2025-02-19 17:02:47,243 - shared_logger - INFO - validation started
+2025-02-19 17:02:47,606 - shared_logger - INFO - Metrics for risk_level_val_fold4 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold4_validation.json
+2025-02-19 17:02:47,607 - shared_logger - INFO - Completed Fold 4 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 17:02:47,651 - shared_logger - INFO - Fold 5:
+2025-02-19 17:02:47,651 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:02:47,651 - shared_logger - INFO - Running Fold 5 for model ABCMeta and target risk_level...
+2025-02-19 17:02:47,652 - shared_logger - INFO - training started
+2025-02-19 17:02:47,652 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 17:04:03,690 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold5_metrics.json
+2025-02-19 17:04:03,691 - shared_logger - INFO - validation started
+2025-02-19 17:04:04,089 - shared_logger - INFO - Metrics for risk_level_val_fold5 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold5_validation.json
+2025-02-19 17:04:04,089 - shared_logger - INFO - Completed Fold 5 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 17:04:04,200 - shared_logger - INFO - Fold 6:
+2025-02-19 17:04:04,200 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:04:04,200 - shared_logger - INFO - Running Fold 6 for model ABCMeta and target risk_level...
+2025-02-19 17:04:04,201 - shared_logger - INFO - training started
+2025-02-19 17:04:04,201 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 17:05:03,704 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold6_metrics.json
+2025-02-19 17:05:03,705 - shared_logger - INFO - validation started
+2025-02-19 17:05:04,085 - shared_logger - INFO - Metrics for risk_level_val_fold6 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold6_validation.json
+2025-02-19 17:05:04,085 - shared_logger - INFO - Completed Fold 6 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 17:05:04,138 - shared_logger - INFO - Fold 7:
+2025-02-19 17:05:04,138 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:05:04,138 - shared_logger - INFO - Running Fold 7 for model ABCMeta and target risk_level...
+2025-02-19 17:05:04,139 - shared_logger - INFO - training started
+2025-02-19 17:05:04,139 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 17:06:05,621 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold7_metrics.json
+2025-02-19 17:06:05,621 - shared_logger - INFO - validation started
+2025-02-19 17:06:05,997 - shared_logger - INFO - Metrics for risk_level_val_fold7 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold7_validation.json
+2025-02-19 17:06:05,997 - shared_logger - INFO - Completed Fold 7 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 17:06:06,081 - shared_logger - INFO - Fold 8:
+2025-02-19 17:06:06,081 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:06:06,082 - shared_logger - INFO - Running Fold 8 for model ABCMeta and target risk_level...
+2025-02-19 17:06:06,083 - shared_logger - INFO - training started
+2025-02-19 17:06:06,083 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 17:07:05,348 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold8_metrics.json
+2025-02-19 17:07:05,348 - shared_logger - INFO - validation started
+2025-02-19 17:07:05,708 - shared_logger - INFO - Metrics for risk_level_val_fold8 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold8_validation.json
+2025-02-19 17:07:05,708 - shared_logger - INFO - Completed Fold 8 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 17:07:05,753 - shared_logger - INFO - Fold 9:
+2025-02-19 17:07:05,753 - shared_logger - INFO - Training size: (1525760, 15), Validation size: (169528, 15)
+2025-02-19 17:07:05,753 - shared_logger - INFO - Running Fold 9 for model ABCMeta and target risk_level...
+2025-02-19 17:07:05,754 - shared_logger - INFO - training started
+2025-02-19 17:07:05,754 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 17:08:04,907 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold9_metrics.json
+2025-02-19 17:08:04,907 - shared_logger - INFO - validation started
+2025-02-19 17:08:05,290 - shared_logger - INFO - Metrics for risk_level_val_fold9 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold9_validation.json
+2025-02-19 17:08:05,290 - shared_logger - INFO - Completed Fold 9 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 17:08:05,344 - shared_logger - INFO - Fold 10:
+2025-02-19 17:08:05,345 - shared_logger - INFO - Training size: (1525760, 15), Validation size: (169528, 15)
+2025-02-19 17:08:05,345 - shared_logger - INFO - Running Fold 10 for model ABCMeta and target risk_level...
+2025-02-19 17:08:05,345 - shared_logger - INFO - training started
+2025-02-19 17:08:05,345 - shared_logger - INFO - Training RandomForestClassifier with default parameters...
+2025-02-19 17:09:05,693 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Train/RF_risk_level_train_fold10_metrics.json
+2025-02-19 17:09:05,693 - shared_logger - INFO - validation started
+2025-02-19 17:09:06,073 - shared_logger - INFO - Metrics for risk_level_val_fold10 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_val_fold10_validation.json
+2025-02-19 17:09:06,074 - shared_logger - INFO - Completed Fold 10 for model <class 'sklearn.ensemble._forest.RandomForestClassifier'> and target risk_level
+
+2025-02-19 17:09:06,074 - shared_logger - INFO - Evaluating the best model on the test set...
+2025-02-19 17:09:07,039 - shared_logger - INFO - Metrics for risk_level_test saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val/RF_risk_level_risk_level_test_validation.json
+2025-02-19 17:09:07,050 - shared_logger - INFO - Model saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/RF.joblib
+2025-02-19 17:09:07,050 - shared_logger - INFO - Completed evaluation for model ABCMeta and target risk_level
+2025-02-19 17:10:54,686 - shared_logger - INFO - Data successfully read
+2025-02-19 17:10:54,686 - shared_logger - INFO - Processing target: risk_level
+2025-02-19 17:10:54,686 - shared_logger - INFO - Training and evaluating Naive Bias for risk_level...
+2025-02-19 17:10:55,117 - shared_logger - INFO - Initial split: Train+Val (1695288) | Test (423822)
+2025-02-19 17:10:55,319 - shared_logger - INFO - Fold 1:
+2025-02-19 17:10:55,319 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:10:55,319 - shared_logger - INFO - Running Fold 1 for model ABCMeta and target risk_level...
+2025-02-19 17:10:55,319 - shared_logger - INFO - training started
+2025-02-19 17:10:55,319 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:10:56,129 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold1_metrics.json
+2025-02-19 17:10:56,129 - shared_logger - INFO - validation started
+2025-02-19 17:10:56,188 - shared_logger - INFO - Metrics for risk_level_val_fold1 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold1_validation.json
+2025-02-19 17:10:56,189 - shared_logger - INFO - Completed Fold 1 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:10:56,270 - shared_logger - INFO - Fold 2:
+2025-02-19 17:10:56,270 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:10:56,270 - shared_logger - INFO - Running Fold 2 for model ABCMeta and target risk_level...
+2025-02-19 17:10:56,270 - shared_logger - INFO - training started
+2025-02-19 17:10:56,270 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:10:57,045 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold2_metrics.json
+2025-02-19 17:10:57,045 - shared_logger - INFO - validation started
+2025-02-19 17:10:57,102 - shared_logger - INFO - Metrics for risk_level_val_fold2 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold2_validation.json
+2025-02-19 17:10:57,102 - shared_logger - INFO - Completed Fold 2 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:10:57,143 - shared_logger - INFO - Fold 3:
+2025-02-19 17:10:57,143 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:10:57,143 - shared_logger - INFO - Running Fold 3 for model ABCMeta and target risk_level...
+2025-02-19 17:10:57,143 - shared_logger - INFO - training started
+2025-02-19 17:10:57,143 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:10:57,859 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold3_metrics.json
+2025-02-19 17:10:57,860 - shared_logger - INFO - validation started
+2025-02-19 17:10:57,919 - shared_logger - INFO - Metrics for risk_level_val_fold3 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold3_validation.json
+2025-02-19 17:10:57,919 - shared_logger - INFO - Completed Fold 3 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:10:57,960 - shared_logger - INFO - Fold 4:
+2025-02-19 17:10:57,961 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:10:57,961 - shared_logger - INFO - Running Fold 4 for model ABCMeta and target risk_level...
+2025-02-19 17:10:57,961 - shared_logger - INFO - training started
+2025-02-19 17:10:57,961 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:10:58,712 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold4_metrics.json
+2025-02-19 17:10:58,712 - shared_logger - INFO - validation started
+2025-02-19 17:10:58,767 - shared_logger - INFO - Metrics for risk_level_val_fold4 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold4_validation.json
+2025-02-19 17:10:58,768 - shared_logger - INFO - Completed Fold 4 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:10:58,809 - shared_logger - INFO - Fold 5:
+2025-02-19 17:10:58,809 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:10:58,809 - shared_logger - INFO - Running Fold 5 for model ABCMeta and target risk_level...
+2025-02-19 17:10:58,809 - shared_logger - INFO - training started
+2025-02-19 17:10:58,809 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:10:59,522 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold5_metrics.json
+2025-02-19 17:10:59,522 - shared_logger - INFO - validation started
+2025-02-19 17:10:59,579 - shared_logger - INFO - Metrics for risk_level_val_fold5 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold5_validation.json
+2025-02-19 17:10:59,579 - shared_logger - INFO - Completed Fold 5 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:10:59,621 - shared_logger - INFO - Fold 6:
+2025-02-19 17:10:59,621 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:10:59,621 - shared_logger - INFO - Running Fold 6 for model ABCMeta and target risk_level...
+2025-02-19 17:10:59,621 - shared_logger - INFO - training started
+2025-02-19 17:10:59,621 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:11:00,357 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold6_metrics.json
+2025-02-19 17:11:00,357 - shared_logger - INFO - validation started
+2025-02-19 17:11:00,414 - shared_logger - INFO - Metrics for risk_level_val_fold6 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold6_validation.json
+2025-02-19 17:11:00,414 - shared_logger - INFO - Completed Fold 6 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:11:00,455 - shared_logger - INFO - Fold 7:
+2025-02-19 17:11:00,455 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:11:00,455 - shared_logger - INFO - Running Fold 7 for model ABCMeta and target risk_level...
+2025-02-19 17:11:00,455 - shared_logger - INFO - training started
+2025-02-19 17:11:00,455 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:11:01,187 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold7_metrics.json
+2025-02-19 17:11:01,188 - shared_logger - INFO - validation started
+2025-02-19 17:11:01,244 - shared_logger - INFO - Metrics for risk_level_val_fold7 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold7_validation.json
+2025-02-19 17:11:01,245 - shared_logger - INFO - Completed Fold 7 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:11:01,286 - shared_logger - INFO - Fold 8:
+2025-02-19 17:11:01,286 - shared_logger - INFO - Training size: (1525759, 15), Validation size: (169529, 15)
+2025-02-19 17:11:01,286 - shared_logger - INFO - Running Fold 8 for model ABCMeta and target risk_level...
+2025-02-19 17:11:01,286 - shared_logger - INFO - training started
+2025-02-19 17:11:01,286 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:11:01,983 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold8_metrics.json
+2025-02-19 17:11:01,983 - shared_logger - INFO - validation started
+2025-02-19 17:11:02,040 - shared_logger - INFO - Metrics for risk_level_val_fold8 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold8_validation.json
+2025-02-19 17:11:02,040 - shared_logger - INFO - Completed Fold 8 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:11:02,081 - shared_logger - INFO - Fold 9:
+2025-02-19 17:11:02,081 - shared_logger - INFO - Training size: (1525760, 15), Validation size: (169528, 15)
+2025-02-19 17:11:02,081 - shared_logger - INFO - Running Fold 9 for model ABCMeta and target risk_level...
+2025-02-19 17:11:02,081 - shared_logger - INFO - training started
+2025-02-19 17:11:02,081 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:11:02,782 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold9_metrics.json
+2025-02-19 17:11:02,782 - shared_logger - INFO - validation started
+2025-02-19 17:11:02,839 - shared_logger - INFO - Metrics for risk_level_val_fold9 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold9_validation.json
+2025-02-19 17:11:02,839 - shared_logger - INFO - Completed Fold 9 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:11:02,879 - shared_logger - INFO - Fold 10:
+2025-02-19 17:11:02,879 - shared_logger - INFO - Training size: (1525760, 15), Validation size: (169528, 15)
+2025-02-19 17:11:02,880 - shared_logger - INFO - Running Fold 10 for model ABCMeta and target risk_level...
+2025-02-19 17:11:02,880 - shared_logger - INFO - training started
+2025-02-19 17:11:02,880 - shared_logger - INFO - Training GaussianNB with default parameters...
+2025-02-19 17:11:03,585 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Train/NB_risk_level_train_fold10_metrics.json
+2025-02-19 17:11:03,586 - shared_logger - INFO - validation started
+2025-02-19 17:11:03,642 - shared_logger - INFO - Metrics for risk_level_val_fold10 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_val_fold10_validation.json
+2025-02-19 17:11:03,642 - shared_logger - INFO - Completed Fold 10 for model <class 'sklearn.naive_bayes.GaussianNB'> and target risk_level
+
+2025-02-19 17:11:03,642 - shared_logger - INFO - Evaluating the best model on the test set...
+2025-02-19 17:11:03,792 - shared_logger - INFO - Metrics for risk_level_test saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_test_validation.json
+2025-02-19 17:11:03,793 - shared_logger - INFO - Model saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/NB.joblib
+2025-02-19 17:11:03,793 - shared_logger - INFO - Completed evaluation for model ABCMeta and target risk_level

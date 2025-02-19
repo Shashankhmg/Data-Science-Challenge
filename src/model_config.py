@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression, SGDClassifier
 # Define a function that returns a dictionary of models and their hyperparameters
 def get_models_and_params():
     models = {
-        "Decision Tree": DecisionTreeClassifier
+        "Naive Bias": GaussianNB
     }
 
     param_grid = {
