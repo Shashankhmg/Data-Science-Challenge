@@ -1,5 +1,5 @@
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report,mean_absolute_error, mean_squared_error, r2_score
 from joblib import dump  # For saving the model
 import os
 import json
@@ -8,12 +8,12 @@ sys.path.append(os.path.dirname(r'C:\Users\Girish\OneDrive - HORIBA\Project%20ML
 from logging_config import setup_logger
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
-
+import numpy as np
 # Set up logger
 logger = setup_logger()
 
 class ModelRunner:
-    def __init__(self, model, param_grid=None, cv=5, scoring='accuracy', search_method='None'):
+    def __init__(self, model, param_grid=None, cv=5, scoring='accuracy', model_type = 'classifier', search_method='None'):
         """
         Initialize the model runner with optional grid search.
         
@@ -31,6 +31,7 @@ class ModelRunner:
         self.grid_search = None
         self.random_state = 42
         self.search_method = search_method
+        self.model_type = model_type
 
     def train(self, X_train, y_train, dataset_name):
         """
@@ -57,25 +58,36 @@ class ModelRunner:
 
             # Calculate training metrics
             predictions = self.model.predict(X_train)
-            training_metrics.update({
-                "accuracy": accuracy_score(y_train, predictions),
-                "precision": precision_score(y_train, predictions, average='weighted'),
-                "recall": recall_score(y_train, predictions, average='weighted'),
-                "f1_score": f1_score(y_train, predictions, average='weighted'),
-                "classification_report": classification_report(y_train, predictions, output_dict=True)
-            })
-            # Save training metrics to JSON
-            current_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
-            model_dir = os.path.join(current_dir, self.model, "train")  # Directory named after the model
-
-            # Create the directory if it doesn't exist
-            os.makedirs(model_dir, exist_ok=True)
+            if self.model_type == 'classifier':
+                training_metrics.update({
+                    "accuracy": accuracy_score(y_train, predictions),
+                    "precision": precision_score(y_train, predictions, average='weighted'),
+                    "recall": recall_score(y_train, predictions, average='weighted'),
+                    "f1_score": f1_score(y_train, predictions, average='weighted'),
+                    "classification_report": classification_report(y_train, predictions, output_dict=True)
+                })
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
 
 
-            metrics_file = os.path.join(current_dir, f"{self.model}_training_metrics.json")
-            with open(metrics_file, "w") as f:
-                json.dump(training_metrics, f, indent=4)
-            print(f"Training metrics saved to {metrics_file}")
+                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                with open(metrics_file, "w") as f:
+                    json.dump(training_metrics, f, indent=4)
+                logger.info(f"Training metrics saved to {metrics_file}")
+            else: 
+                # Compute Metrics for Training Data
+                training_metrics = {
+                    "MAE": mean_absolute_error(y_train, predictions),
+                    "MSE": mean_squared_error(y_train, predictions),
+                    "RMSE": np.sqrt(mean_squared_error(y_train, predictions)),
+                    "R2_Score": r2_score(y_train, predictions),
+                }
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
+
+
+                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                with open(metrics_file, "w") as f:
+                    json.dump(training_metrics, f, indent=4)
+                logger.info(f"Training metrics saved to {metrics_file}")
 
         elif self.search_method == 'random_search':
             logger.info(f"Running RandomizedSearchCV for {self.model.__class__.__name__}...")
@@ -110,20 +122,37 @@ class ModelRunner:
 
             # Calculate training metrics
             predictions = self.model.predict(X_train)
-            training_metrics.update({
-                "accuracy": accuracy_score(y_train, predictions),
-                "precision": precision_score(y_train, predictions, average='weighted'),
-                "recall": recall_score(y_train, predictions, average='weighted'),
-                "f1_score": f1_score(y_train, predictions, average='weighted'),
-                "classification_report": classification_report(y_train, predictions, output_dict=True)
-            })
-            # Save training metrics to JSON
-            # Save training metrics to a model-specific folder
-            base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train"
-            metrics_file = os.path.join(base_path, f"DT_{dataset_name}_metrics.json")
-            with open(metrics_file, "w") as f:
-                json.dump(training_metrics, f, indent=4)
-            logger.info(f"Training metrics saved to {metrics_file}")            
+            if self.model_type == 'classifier':
+                training_metrics.update({
+                    "accuracy": accuracy_score(y_train, predictions),
+                    "precision": precision_score(y_train, predictions, average='weighted'),
+                    "recall": recall_score(y_train, predictions, average='weighted'),
+                    "f1_score": f1_score(y_train, predictions, average='weighted'),
+                    "classification_report": classification_report(y_train, predictions, output_dict=True)
+                })
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
+
+
+                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                with open(metrics_file, "w") as f:
+                    json.dump(training_metrics, f, indent=4)
+                logger.info(f"Training metrics saved to {metrics_file}")
+            else: 
+                # Compute Metrics for Training Data
+                training_metrics = {
+                    "MAE": mean_absolute_error(y_train, predictions),
+                    "MSE": mean_squared_error(y_train, predictions),
+                    "RMSE": np.sqrt(mean_squared_error(y_train, predictions)),
+                    "R2_Score": r2_score(y_train, predictions),
+                }
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
+
+
+                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                with open(metrics_file, "w") as f:
+                    json.dump(training_metrics, f, indent=4)
+                logger.info(f"Training metrics saved to {metrics_file}")
+        
 
         else:
             # Train with default parameters
@@ -135,20 +164,37 @@ class ModelRunner:
 
             # Calculate training metrics
             predictions = self.model.predict(X_train)
-            training_metrics.update({
-                "accuracy": accuracy_score(y_train, predictions),
-                "precision": precision_score(y_train, predictions, average='weighted'),
-                "recall": recall_score(y_train, predictions, average='weighted'),
-                "f1_score": f1_score(y_train, predictions, average='weighted'),
-                "classification_report": classification_report(y_train, predictions, output_dict=True)
-            })
-            base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
+            if self.model_type == 'classifier':
+                training_metrics.update({
+                    "accuracy": accuracy_score(y_train, predictions),
+                    "precision": precision_score(y_train, predictions, average='weighted'),
+                    "recall": recall_score(y_train, predictions, average='weighted'),
+                    "f1_score": f1_score(y_train, predictions, average='weighted'),
+                    "classification_report": classification_report(y_train, predictions, output_dict=True)
+                })
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
 
 
-            metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
-            with open(metrics_file, "w") as f:
-                json.dump(training_metrics, f, indent=4)
-            logger.info(f"Training metrics saved to {metrics_file}")
+                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                with open(metrics_file, "w") as f:
+                    json.dump(training_metrics, f, indent=4)
+                logger.info(f"Training metrics saved to {metrics_file}")
+            else: 
+                # Compute Metrics for Training Data
+                training_metrics = {
+                    "MAE": mean_absolute_error(y_train, predictions),
+                    "MSE": mean_squared_error(y_train, predictions),
+                    "RMSE": np.sqrt(mean_squared_error(y_train, predictions)),
+                    "R2_Score": r2_score(y_train, predictions),
+                }
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
+
+
+                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                with open(metrics_file, "w") as f:
+                    json.dump(training_metrics, f, indent=4)
+                logger.info(f"Training metrics saved to {metrics_file}")
+
 
 
 
@@ -166,25 +212,39 @@ class ModelRunner:
             dict: Evaluation metrics.
         """
         predictions = self.model.predict(X)
-        metrics = {
-            "model_parameters": self.model.get_params(),  # Extract model parameters
-            "dataset": dataset_name,
-            "accuracy": accuracy_score(y, predictions),
-            "precision": precision_score(y, predictions, average='weighted'),
-            "recall": recall_score(y, predictions, average='weighted'),
-            "f1_score": f1_score(y, predictions, average='weighted'),
-            "classification_report": classification_report(y, predictions, output_dict=True)
-        }
-
-        base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Val"
+        if self.model_type == 'classifier':
+                training_metrics.update({
+                    "accuracy": accuracy_score(y, predictions),
+                    "precision": precision_score(y, predictions, average='weighted'),
+                    "recall": recall_score(y, predictions, average='weighted'),
+                    "f1_score": f1_score(y, predictions, average='weighted'),
+                    "classification_report": classification_report(y, predictions, output_dict=True)
+                })
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Val"
 
 
-        metrics_file = os.path.join(base_path, f'RF_{target_name}_{dataset_name}_validation.json')
-        with open(metrics_file, "w") as f:
-            json.dump(metrics, f, indent=4)
-        logger.info(f"Metrics for {dataset_name} saved to {metrics_file}")
+                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                with open(metrics_file, "w") as f:
+                    json.dump(training_metrics, f, indent=4)
+                metrics_file = os.path.join(base_path, f'RF_{target_name}_{dataset_name}_validation.json')
 
-        return metrics
+        else: 
+            # Compute Metrics for Training Data
+            training_metrics = {
+                "MAE": mean_absolute_error(y, predictions),
+                "MSE": mean_squared_error(y, predictions),
+                "RMSE": np.sqrt(mean_squared_error(y, predictions)),
+                "R2_Score": r2_score(y, predictions),
+            }
+            base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Val"
+
+
+
+            metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+            with open(metrics_file, "w") as f:
+                json.dump(training_metrics, f, indent=4)
+            metrics_file = os.path.join(base_path, f'RF_{target_name}_{dataset_name}_validation.json')
+
 
     def save_model(self, target_name):
         """
@@ -194,6 +254,6 @@ class ModelRunner:
             target_name (str): Name of the target variable.
         """
         base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor"
-        model_path = os.path.join(base_path, f'DT.joblib')
+        model_path = os.path.join(base_path, f'RF.joblib')
         dump(self.model, model_path)
         logger.info(f"Model saved to {model_path}")

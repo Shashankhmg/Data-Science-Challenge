@@ -38,6 +38,7 @@ def split_data(X_train_val, y_train_val, X_test, y_test, model, target_column, p
             param_grid=param_grid,
             cv=10,
             scoring="accuracy",
+            model_type = 'regressor',
             search_method="None"
         )
         logger.info('training started')
