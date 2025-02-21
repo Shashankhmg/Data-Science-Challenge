@@ -142,10 +142,10 @@ class ModelRunner:
                 "f1_score": f1_score(y_train, predictions, average='weighted'),
                 "classification_report": classification_report(y_train, predictions, output_dict=True)
             })
-            base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train"
+            base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
 
 
-            metrics_file = os.path.join(base_path, f"DT_{dataset_name}_metrics.json")
+            metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
             with open(metrics_file, "w") as f:
                 json.dump(training_metrics, f, indent=4)
             logger.info(f"Training metrics saved to {metrics_file}")
@@ -176,10 +176,10 @@ class ModelRunner:
             "classification_report": classification_report(y, predictions, output_dict=True)
         }
 
-        base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val"
+        base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Val"
 
 
-        metrics_file = os.path.join(base_path, f'DT_{target_name}_{dataset_name}_validation.json')
+        metrics_file = os.path.join(base_path, f'RF_{target_name}_{dataset_name}_validation.json')
         with open(metrics_file, "w") as f:
             json.dump(metrics, f, indent=4)
         logger.info(f"Metrics for {dataset_name} saved to {metrics_file}")
@@ -193,7 +193,7 @@ class ModelRunner:
         Args:
             target_name (str): Name of the target variable.
         """
-        base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT"
+        base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor"
         model_path = os.path.join(base_path, f'DT.joblib')
         dump(self.model, model_path)
         logger.info(f"Model saved to {model_path}")

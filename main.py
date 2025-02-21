@@ -9,7 +9,7 @@ from logging_config import setup_logger
 logger = setup_logger()
 
 # Load and prepare the data
-data = pd.read_csv("/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/data/model_data/cleaned_model_data.csv")
+data = pd.read_csv("/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/data/model_data/demand_forecast_model/demand_data.csv")
 logger.info('Data successfully read')
 data = data.iloc[:, 1:] # removing the unnamed column
 
@@ -17,7 +17,7 @@ data = data.iloc[:, 1:] # removing the unnamed column
 models, param_grid = get_models_and_params()
 
 # Define the target columns
-targets = ["risk_level"]
+targets = ["trip_count"]
 
 # Iterate over the target columns
 for target_column in targets:

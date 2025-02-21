@@ -538,3 +538,12 @@
 2025-02-21 11:27:49,545 - shared_logger - INFO - Metrics for risk_level_test saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_test_validation.json
 2025-02-21 11:27:49,547 - shared_logger - INFO - Model saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/DT.joblib
 2025-02-21 11:27:49,547 - shared_logger - INFO - Completed evaluation for model ABCMeta and target risk_level
+2025-02-21 18:17:30,716 - shared_logger - INFO - Data successfully read
+2025-02-21 18:17:30,742 - shared_logger - INFO - Processing target: trip_count
+2025-02-21 18:17:30,742 - shared_logger - INFO - Training and evaluating Random Forest for trip_count...
+2025-02-21 18:17:31,128 - shared_logger - INFO - Initial split: Train+Val (1695569) | Test (423893)
+2025-02-21 18:17:31,456 - shared_logger - INFO - Fold 1:
+2025-02-21 18:17:31,456 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 18:17:31,456 - shared_logger - INFO - Running Fold 1 for model ABCMeta and target trip_count...
+2025-02-21 18:17:31,456 - shared_logger - INFO - training started
+2025-02-21 18:17:31,456 - shared_logger - INFO - Training RandomForestRegressor with default parameters...
