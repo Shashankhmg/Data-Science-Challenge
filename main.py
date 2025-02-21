@@ -11,6 +11,7 @@ logger = setup_logger()
 # Load and prepare the data
 data = pd.read_csv("/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/data/model_data/cleaned_model_data.csv")
 logger.info('Data successfully read')
+data = data.iloc[:, 1:] # removing the unnamed column
 
 # Get models and hyperparameters
 models, param_grid = get_models_and_params()

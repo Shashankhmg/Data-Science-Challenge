@@ -430,3 +430,111 @@
 2025-02-19 17:11:03,792 - shared_logger - INFO - Metrics for risk_level_test saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/Val/NB_risk_level_risk_level_test_validation.json
 2025-02-19 17:11:03,793 - shared_logger - INFO - Model saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/NB/NB.joblib
 2025-02-19 17:11:03,793 - shared_logger - INFO - Completed evaluation for model ABCMeta and target risk_level
+2025-02-21 11:27:32,361 - shared_logger - INFO - Data successfully read
+2025-02-21 11:27:32,400 - shared_logger - INFO - Processing target: risk_level
+2025-02-21 11:27:32,400 - shared_logger - INFO - Training and evaluating Decision Tree for risk_level...
+2025-02-21 11:27:32,775 - shared_logger - INFO - Initial split: Train+Val (1695288) | Test (423822)
+2025-02-21 11:27:33,000 - shared_logger - INFO - Fold 1:
+2025-02-21 11:27:33,000 - shared_logger - INFO - Training size: (1525759, 14), Validation size: (169529, 14)
+2025-02-21 11:27:33,000 - shared_logger - INFO - Running Fold 1 for model ABCMeta and target risk_level...
+2025-02-21 11:27:33,000 - shared_logger - INFO - training started
+2025-02-21 11:27:33,000 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:34,537 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold1_metrics.json
+2025-02-21 11:27:34,538 - shared_logger - INFO - validation started
+2025-02-21 11:27:34,608 - shared_logger - INFO - Metrics for risk_level_val_fold1 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold1_validation.json
+2025-02-21 11:27:34,608 - shared_logger - INFO - Completed Fold 1 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:34,658 - shared_logger - INFO - Fold 2:
+2025-02-21 11:27:34,658 - shared_logger - INFO - Training size: (1525759, 14), Validation size: (169529, 14)
+2025-02-21 11:27:34,658 - shared_logger - INFO - Running Fold 2 for model ABCMeta and target risk_level...
+2025-02-21 11:27:34,658 - shared_logger - INFO - training started
+2025-02-21 11:27:34,658 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:36,259 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold2_metrics.json
+2025-02-21 11:27:36,259 - shared_logger - INFO - validation started
+2025-02-21 11:27:36,333 - shared_logger - INFO - Metrics for risk_level_val_fold2 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold2_validation.json
+2025-02-21 11:27:36,333 - shared_logger - INFO - Completed Fold 2 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:36,376 - shared_logger - INFO - Fold 3:
+2025-02-21 11:27:36,376 - shared_logger - INFO - Training size: (1525759, 14), Validation size: (169529, 14)
+2025-02-21 11:27:36,376 - shared_logger - INFO - Running Fold 3 for model ABCMeta and target risk_level...
+2025-02-21 11:27:36,376 - shared_logger - INFO - training started
+2025-02-21 11:27:36,376 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:37,951 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold3_metrics.json
+2025-02-21 11:27:37,952 - shared_logger - INFO - validation started
+2025-02-21 11:27:38,027 - shared_logger - INFO - Metrics for risk_level_val_fold3 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold3_validation.json
+2025-02-21 11:27:38,027 - shared_logger - INFO - Completed Fold 3 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:38,067 - shared_logger - INFO - Fold 4:
+2025-02-21 11:27:38,067 - shared_logger - INFO - Training size: (1525759, 14), Validation size: (169529, 14)
+2025-02-21 11:27:38,067 - shared_logger - INFO - Running Fold 4 for model ABCMeta and target risk_level...
+2025-02-21 11:27:38,067 - shared_logger - INFO - training started
+2025-02-21 11:27:38,067 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:39,578 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold4_metrics.json
+2025-02-21 11:27:39,579 - shared_logger - INFO - validation started
+2025-02-21 11:27:39,652 - shared_logger - INFO - Metrics for risk_level_val_fold4 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold4_validation.json
+2025-02-21 11:27:39,652 - shared_logger - INFO - Completed Fold 4 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:39,692 - shared_logger - INFO - Fold 5:
+2025-02-21 11:27:39,692 - shared_logger - INFO - Training size: (1525759, 14), Validation size: (169529, 14)
+2025-02-21 11:27:39,692 - shared_logger - INFO - Running Fold 5 for model ABCMeta and target risk_level...
+2025-02-21 11:27:39,692 - shared_logger - INFO - training started
+2025-02-21 11:27:39,692 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:41,209 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold5_metrics.json
+2025-02-21 11:27:41,210 - shared_logger - INFO - validation started
+2025-02-21 11:27:41,279 - shared_logger - INFO - Metrics for risk_level_val_fold5 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold5_validation.json
+2025-02-21 11:27:41,279 - shared_logger - INFO - Completed Fold 5 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:41,318 - shared_logger - INFO - Fold 6:
+2025-02-21 11:27:41,318 - shared_logger - INFO - Training size: (1525759, 14), Validation size: (169529, 14)
+2025-02-21 11:27:41,318 - shared_logger - INFO - Running Fold 6 for model ABCMeta and target risk_level...
+2025-02-21 11:27:41,318 - shared_logger - INFO - training started
+2025-02-21 11:27:41,318 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:42,785 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold6_metrics.json
+2025-02-21 11:27:42,785 - shared_logger - INFO - validation started
+2025-02-21 11:27:42,856 - shared_logger - INFO - Metrics for risk_level_val_fold6 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold6_validation.json
+2025-02-21 11:27:42,856 - shared_logger - INFO - Completed Fold 6 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:42,895 - shared_logger - INFO - Fold 7:
+2025-02-21 11:27:42,895 - shared_logger - INFO - Training size: (1525759, 14), Validation size: (169529, 14)
+2025-02-21 11:27:42,895 - shared_logger - INFO - Running Fold 7 for model ABCMeta and target risk_level...
+2025-02-21 11:27:42,895 - shared_logger - INFO - training started
+2025-02-21 11:27:42,895 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:44,361 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold7_metrics.json
+2025-02-21 11:27:44,361 - shared_logger - INFO - validation started
+2025-02-21 11:27:44,431 - shared_logger - INFO - Metrics for risk_level_val_fold7 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold7_validation.json
+2025-02-21 11:27:44,431 - shared_logger - INFO - Completed Fold 7 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:44,471 - shared_logger - INFO - Fold 8:
+2025-02-21 11:27:44,471 - shared_logger - INFO - Training size: (1525759, 14), Validation size: (169529, 14)
+2025-02-21 11:27:44,471 - shared_logger - INFO - Running Fold 8 for model ABCMeta and target risk_level...
+2025-02-21 11:27:44,471 - shared_logger - INFO - training started
+2025-02-21 11:27:44,471 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:46,004 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold8_metrics.json
+2025-02-21 11:27:46,004 - shared_logger - INFO - validation started
+2025-02-21 11:27:46,076 - shared_logger - INFO - Metrics for risk_level_val_fold8 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold8_validation.json
+2025-02-21 11:27:46,076 - shared_logger - INFO - Completed Fold 8 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:46,114 - shared_logger - INFO - Fold 9:
+2025-02-21 11:27:46,114 - shared_logger - INFO - Training size: (1525760, 14), Validation size: (169528, 14)
+2025-02-21 11:27:46,114 - shared_logger - INFO - Running Fold 9 for model ABCMeta and target risk_level...
+2025-02-21 11:27:46,114 - shared_logger - INFO - training started
+2025-02-21 11:27:46,114 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:47,658 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold9_metrics.json
+2025-02-21 11:27:47,659 - shared_logger - INFO - validation started
+2025-02-21 11:27:47,731 - shared_logger - INFO - Metrics for risk_level_val_fold9 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold9_validation.json
+2025-02-21 11:27:47,731 - shared_logger - INFO - Completed Fold 9 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:47,770 - shared_logger - INFO - Fold 10:
+2025-02-21 11:27:47,770 - shared_logger - INFO - Training size: (1525760, 14), Validation size: (169528, 14)
+2025-02-21 11:27:47,770 - shared_logger - INFO - Running Fold 10 for model ABCMeta and target risk_level...
+2025-02-21 11:27:47,770 - shared_logger - INFO - training started
+2025-02-21 11:27:47,770 - shared_logger - INFO - Training DecisionTreeClassifier with default parameters...
+2025-02-21 11:27:49,280 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Train/DT_risk_level_train_fold10_metrics.json
+2025-02-21 11:27:49,281 - shared_logger - INFO - validation started
+2025-02-21 11:27:49,354 - shared_logger - INFO - Metrics for risk_level_val_fold10 saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_val_fold10_validation.json
+2025-02-21 11:27:49,354 - shared_logger - INFO - Completed Fold 10 for model <class 'sklearn.tree._classes.DecisionTreeClassifier'> and target risk_level
+
+2025-02-21 11:27:49,354 - shared_logger - INFO - Evaluating the best model on the test set...
+2025-02-21 11:27:49,545 - shared_logger - INFO - Metrics for risk_level_test saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/Val/DT_risk_level_risk_level_test_validation.json
+2025-02-21 11:27:49,547 - shared_logger - INFO - Model saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/DT/DT.joblib
+2025-02-21 11:27:49,547 - shared_logger - INFO - Completed evaluation for model ABCMeta and target risk_level
