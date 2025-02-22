@@ -3,10 +3,11 @@ from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression, SGDClassifier
+from sklearn.linear_model import LinearRegression
 # Define a function that returns a dictionary of models and their hyperparameters
 def get_models_and_params():
     models = {
-        "Random Forest": RandomForestRegressor
+        "Linear Regression": LinearRegression
     }
 
     param_grid = {

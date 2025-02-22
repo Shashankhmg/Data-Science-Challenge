@@ -172,10 +172,10 @@ class ModelRunner:
                     "f1_score": f1_score(y_train, predictions, average='weighted'),
                     "classification_report": classification_report(y_train, predictions, output_dict=True)
                 })
-                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train"
 
 
-                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                metrics_file = os.path.join(base_path, f"LR_{dataset_name}_metrics.json")
                 with open(metrics_file, "w") as f:
                     json.dump(training_metrics, f, indent=4)
                 logger.info(f"Training metrics saved to {metrics_file}")
@@ -187,10 +187,10 @@ class ModelRunner:
                     "RMSE": np.sqrt(mean_squared_error(y_train, predictions)),
                     "R2_Score": r2_score(y_train, predictions),
                 }
-                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Train"
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train"
 
 
-                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                metrics_file = os.path.join(base_path, f"LR_{dataset_name}_metrics.json")
                 with open(metrics_file, "w") as f:
                     json.dump(training_metrics, f, indent=4)
                 logger.info(f"Training metrics saved to {metrics_file}")
@@ -220,13 +220,13 @@ class ModelRunner:
                     "f1_score": f1_score(y, predictions, average='weighted'),
                     "classification_report": classification_report(y, predictions, output_dict=True)
                 })
-                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Val"
+                base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Val"
 
 
-                metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+                metrics_file = os.path.join(base_path, f"LR_{dataset_name}_metrics.json")
                 with open(metrics_file, "w") as f:
                     json.dump(training_metrics, f, indent=4)
-                metrics_file = os.path.join(base_path, f'RF_{target_name}_{dataset_name}_validation.json')
+                metrics_file = os.path.join(base_path, f'LR_{target_name}_{dataset_name}_validation.json')
 
         else: 
             # Compute Metrics for Training Data
@@ -236,14 +236,14 @@ class ModelRunner:
                 "RMSE": np.sqrt(mean_squared_error(y, predictions)),
                 "R2_Score": r2_score(y, predictions),
             }
-            base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/Val"
+            base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Val"
 
 
 
-            metrics_file = os.path.join(base_path, f"RF_{dataset_name}_metrics.json")
+            metrics_file = os.path.join(base_path, f"LR_{dataset_name}_metrics.json")
             with open(metrics_file, "w") as f:
                 json.dump(training_metrics, f, indent=4)
-            metrics_file = os.path.join(base_path, f'RF_{target_name}_{dataset_name}_validation.json')
+            metrics_file = os.path.join(base_path, f'LR_{target_name}_{dataset_name}_validation.json')
 
 
     def save_model(self, target_name):
@@ -253,7 +253,7 @@ class ModelRunner:
         Args:
             target_name (str): Name of the target variable.
         """
-        base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor"
-        model_path = os.path.join(base_path, f'RF.joblib')
+        base_path = r"/Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR"
+        model_path = os.path.join(base_path, f'LR.joblib')
         dump(self.model, model_path)
         logger.info(f"Model saved to {model_path}")

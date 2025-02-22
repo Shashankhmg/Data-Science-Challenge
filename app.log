@@ -653,3 +653,100 @@
 2025-02-21 19:25:10,101 - shared_logger - INFO - Evaluating the best model on the test set...
 2025-02-21 19:25:19,092 - shared_logger - INFO - Model saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/RF/Regressor/DT.joblib
 2025-02-21 19:25:19,093 - shared_logger - INFO - Completed evaluation for model ABCMeta and target trip_count
+2025-02-21 21:00:37,383 - shared_logger - INFO - Data successfully read
+2025-02-21 21:00:37,411 - shared_logger - INFO - Processing target: trip_count
+2025-02-21 21:00:37,412 - shared_logger - INFO - Training and evaluating Linear Regression for trip_count...
+2025-02-21 21:00:37,810 - shared_logger - INFO - Initial split: Train+Val (1695569) | Test (423893)
+2025-02-21 21:00:38,154 - shared_logger - INFO - Fold 1:
+2025-02-21 21:00:38,154 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 21:00:38,154 - shared_logger - INFO - Running Fold 1 for model ABCMeta and target trip_count...
+2025-02-21 21:00:38,154 - shared_logger - INFO - training started
+2025-02-21 21:00:38,154 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:38,344 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold1_metrics.json
+2025-02-21 21:00:38,344 - shared_logger - INFO - validation started
+2025-02-21 21:00:38,357 - shared_logger - INFO - Completed Fold 1 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:38,408 - shared_logger - INFO - Fold 2:
+2025-02-21 21:00:38,410 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 21:00:38,410 - shared_logger - INFO - Running Fold 2 for model ABCMeta and target trip_count...
+2025-02-21 21:00:38,410 - shared_logger - INFO - training started
+2025-02-21 21:00:38,410 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:38,596 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold2_metrics.json
+2025-02-21 21:00:38,596 - shared_logger - INFO - validation started
+2025-02-21 21:00:38,601 - shared_logger - INFO - Completed Fold 2 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:38,655 - shared_logger - INFO - Fold 3:
+2025-02-21 21:00:38,655 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 21:00:38,655 - shared_logger - INFO - Running Fold 3 for model ABCMeta and target trip_count...
+2025-02-21 21:00:38,655 - shared_logger - INFO - training started
+2025-02-21 21:00:38,655 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:38,849 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold3_metrics.json
+2025-02-21 21:00:38,850 - shared_logger - INFO - validation started
+2025-02-21 21:00:38,856 - shared_logger - INFO - Completed Fold 3 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:38,898 - shared_logger - INFO - Fold 4:
+2025-02-21 21:00:38,898 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 21:00:38,898 - shared_logger - INFO - Running Fold 4 for model ABCMeta and target trip_count...
+2025-02-21 21:00:38,898 - shared_logger - INFO - training started
+2025-02-21 21:00:38,898 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:39,083 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold4_metrics.json
+2025-02-21 21:00:39,083 - shared_logger - INFO - validation started
+2025-02-21 21:00:39,088 - shared_logger - INFO - Completed Fold 4 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:39,133 - shared_logger - INFO - Fold 5:
+2025-02-21 21:00:39,133 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 21:00:39,133 - shared_logger - INFO - Running Fold 5 for model ABCMeta and target trip_count...
+2025-02-21 21:00:39,133 - shared_logger - INFO - training started
+2025-02-21 21:00:39,133 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:39,313 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold5_metrics.json
+2025-02-21 21:00:39,314 - shared_logger - INFO - validation started
+2025-02-21 21:00:39,318 - shared_logger - INFO - Completed Fold 5 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:39,365 - shared_logger - INFO - Fold 6:
+2025-02-21 21:00:39,365 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 21:00:39,365 - shared_logger - INFO - Running Fold 6 for model ABCMeta and target trip_count...
+2025-02-21 21:00:39,365 - shared_logger - INFO - training started
+2025-02-21 21:00:39,365 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:39,546 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold6_metrics.json
+2025-02-21 21:00:39,546 - shared_logger - INFO - validation started
+2025-02-21 21:00:39,551 - shared_logger - INFO - Completed Fold 6 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:39,602 - shared_logger - INFO - Fold 7:
+2025-02-21 21:00:39,602 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 21:00:39,602 - shared_logger - INFO - Running Fold 7 for model ABCMeta and target trip_count...
+2025-02-21 21:00:39,602 - shared_logger - INFO - training started
+2025-02-21 21:00:39,602 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:39,780 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold7_metrics.json
+2025-02-21 21:00:39,781 - shared_logger - INFO - validation started
+2025-02-21 21:00:39,787 - shared_logger - INFO - Completed Fold 7 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:39,832 - shared_logger - INFO - Fold 8:
+2025-02-21 21:00:39,832 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 21:00:39,832 - shared_logger - INFO - Running Fold 8 for model ABCMeta and target trip_count...
+2025-02-21 21:00:39,832 - shared_logger - INFO - training started
+2025-02-21 21:00:39,832 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:40,023 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold8_metrics.json
+2025-02-21 21:00:40,024 - shared_logger - INFO - validation started
+2025-02-21 21:00:40,029 - shared_logger - INFO - Completed Fold 8 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:40,073 - shared_logger - INFO - Fold 9:
+2025-02-21 21:00:40,073 - shared_logger - INFO - Training size: (1526012, 10), Validation size: (169557, 10)
+2025-02-21 21:00:40,073 - shared_logger - INFO - Running Fold 9 for model ABCMeta and target trip_count...
+2025-02-21 21:00:40,073 - shared_logger - INFO - training started
+2025-02-21 21:00:40,073 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:40,267 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold9_metrics.json
+2025-02-21 21:00:40,268 - shared_logger - INFO - validation started
+2025-02-21 21:00:40,275 - shared_logger - INFO - Completed Fold 9 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:40,333 - shared_logger - INFO - Fold 10:
+2025-02-21 21:00:40,333 - shared_logger - INFO - Training size: (1526013, 10), Validation size: (169556, 10)
+2025-02-21 21:00:40,333 - shared_logger - INFO - Running Fold 10 for model ABCMeta and target trip_count...
+2025-02-21 21:00:40,333 - shared_logger - INFO - training started
+2025-02-21 21:00:40,333 - shared_logger - INFO - Training LinearRegression with default parameters...
+2025-02-21 21:00:40,520 - shared_logger - INFO - Training metrics saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/Train/LR_trip_count_train_fold10_metrics.json
+2025-02-21 21:00:40,520 - shared_logger - INFO - validation started
+2025-02-21 21:00:40,525 - shared_logger - INFO - Completed Fold 10 for model <class 'sklearn.linear_model._base.LinearRegression'> and target trip_count
+
+2025-02-21 21:00:40,529 - shared_logger - INFO - Evaluating the best model on the test set...
+2025-02-21 21:00:40,549 - shared_logger - INFO - Model saved to /Users/shashankhmg/Documents/AXA-Casestudy/Data-Science-Challenge/src/LR/LR.joblib
+2025-02-21 21:00:40,549 - shared_logger - INFO - Completed evaluation for model ABCMeta and target trip_count
