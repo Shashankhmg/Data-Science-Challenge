@@ -2,8 +2,6 @@
 
 This repository contains the backend technical analysis, exploratory data analysis (EDA), data preprocessing, and model training for the **AXA Data Science Challenge**. The purpose of this repository is to document the data preparation pipeline and model development process for CitiBike demand prediction and risk assessment using **CityBike** and **NYPD accident data**.
 
----
-
 ## Project Overview
 
 This repository provides a structured approach to:
@@ -13,8 +11,6 @@ This repository provides a structured approach to:
 - **Logging & Performance Tracking**: Using logs to track training and inference processes.
 
 For the final deployment and interactive visualization, visit the **[Streamlit Application Repository](https://citybikes-nypd-appapp.streamlit.app/)**.
-
----
 
 ## 📂 Repository Structure
 
@@ -26,8 +22,6 @@ For the final deployment and interactive visualization, visit the **[Streamlit A
 │   ├── encoding/        # encodings required to present the results of model prediction
 │
 ├── notebooks/          # Jupyter Notebooks for EDA & preprocessing
-│   ├── 01_eda.ipynb    # Exploratory Data Analysis of CityBike & NYPD datasets
-│   ├── 02_cleaning.ipynb  # Data cleaning and preprocessing
 │
 ├── src/                # Source code for modeling and utilities
 │   ├── models/         # Scripts for training ML models
@@ -40,8 +34,6 @@ For the final deployment and interactive visualization, visit the **[Streamlit A
 ├── README.md           # Documentation
 ├── .gitignore          # Ignoring large model files & cache
 ```
-
----
 
 ## 📊 Datasets Used
 
